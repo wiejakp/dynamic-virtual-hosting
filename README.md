@@ -20,3 +20,20 @@ The Apache 2 directory structure must consist of following settings. Following s
 # and other sub-domains for example: test.domain.com
 /var/www/domain.com/test/public/
 ```
+
+### Apache 2 mods
+```
+a2enmod rewrite
+a2enmod vhost_alias
+a2enmod ssl
+```
+
+### Installation
+```
+sudo cp apache2/sites-available/dynamic-virtual-hosts.conf /etc/apache2/sites-available/dynamic-virtual-hosts.conf
+sudo cp apache2/sites-available/default-virtual-hosts.conf /etc/apache2/sites-available/default-virtual-hosts.conf
+sudo apachectl restart apache2
+```
+
+## Good luck.
+Please ask questions.
